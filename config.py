@@ -3,8 +3,8 @@ import os
 
 class Config(object):
     DEBUG = False
-    DB_NAME = "am-wallte-mongodb"
-    DB_HOST = "mongodb://haha:123@ds163826.mlab.com:63826/am-wallte-mongodb"
+    DB_NAME = os.environ['DB_NAME']
+    DB_HOST = os.environ['CONNECTION_STRING']
     DB_USERNAME = ""
     DB_PASSWORD = ""
     # Web Server details
@@ -23,7 +23,7 @@ class Development(Config):
 
 class Production(Config):
     # MongoDB Database Details
-    DB_HOST = "mongodb://haha:123@ds163826.mlab.com:63826/am-wallte-mongodb"
+    DB_HOST = os.environ['CONNECTION_STRING']
     DB_USERNAME = ""
     DB_PASSWORD = ""
 
