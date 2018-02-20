@@ -3,8 +3,8 @@ import os
 
 class Config(object):
     DEBUG = False
-    DB_NAME = "iky-ai"
-    DB_HOST = "mongodb://127.0.0.1:27017/"
+    DB_NAME = "am-wallte-mongodb"
+    DB_HOST = "mongodb://haha:123@ds163826.mlab.com:63826/am-wallte-mongodb"
     DB_USERNAME = ""
     DB_PASSWORD = ""
     # Web Server details
@@ -23,7 +23,7 @@ class Development(Config):
 
 class Production(Config):
     # MongoDB Database Details
-    DB_HOST = "mongodb://mongodb:27017/"
+    DB_HOST = "mongodb://haha:123@ds163826.mlab.com:63826/am-wallte-mongodb"
     DB_USERNAME = ""
     DB_PASSWORD = ""
 
